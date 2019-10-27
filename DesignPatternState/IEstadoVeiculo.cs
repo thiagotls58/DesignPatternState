@@ -2,7 +2,7 @@
 {
     public interface IEstadoVeiculo
     {
-        public void Devolver(Veiculo veiculo);
-        public bool Alugar(Veiculo veiculo);
+        void DevolverVeiculo(Veiculo veiculo);
+        bool AlugarVeiculo(Veiculo veiculo);
     }
 }

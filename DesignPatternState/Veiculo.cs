@@ -50,12 +50,12 @@ namespace DesignPatternState
 
         public void Devolver()
         {
-            this.estado.Devolver(this);
+            this.estado.DevolverVeiculo(this);
         }
 
         public bool Alugar()
         {
-            return this.estado.Alugar(this);
+            return this.estado.AlugarVeiculo(this);
         }
 
         public override string ToString()

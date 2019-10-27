@@ -1,0 +1,4 @@
+C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\obj\Debug\netcoreapp2.2\DesignPatternState.csprojAssemblyReference.cache
+C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\obj\Debug\netcoreapp2.2\DesignPatternState.csproj.CoreCompileInputs.cache
+C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\obj\Debug\netcoreapp2.2\DesignPatternState.AssemblyInfoInputs.cache
+C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\obj\Debug\netcoreapp2.2\DesignPatternState.AssemblyInfo.cs

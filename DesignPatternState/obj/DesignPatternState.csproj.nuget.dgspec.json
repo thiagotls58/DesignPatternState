@@ -1,36 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\intepp\\source\\repos\\thiagotls58\\DesignPatternState\\DesignPatternState\\DesignPatternState.csproj": {}
+    "C:\\Users\\thiago\\Documents\\GitHub\\DesignPatternState\\DesignPatternState\\DesignPatternState.csproj": {}
   },
   "projects": {
-    "C:\\Users\\intepp\\source\\repos\\thiagotls58\\DesignPatternState\\DesignPatternState\\DesignPatternState.csproj": {
+    "C:\\Users\\thiago\\Documents\\GitHub\\DesignPatternState\\DesignPatternState\\DesignPatternState.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\intepp\\source\\repos\\thiagotls58\\DesignPatternState\\DesignPatternState\\DesignPatternState.csproj",
+        "projectUniqueName": "C:\\Users\\thiago\\Documents\\GitHub\\DesignPatternState\\DesignPatternState\\DesignPatternState.csproj",
         "projectName": "DesignPatternState",
-        "projectPath": "C:\\Users\\intepp\\source\\repos\\thiagotls58\\DesignPatternState\\DesignPatternState\\DesignPatternState.csproj",
-        "packagesPath": "C:\\Users\\intepp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\intepp\\source\\repos\\thiagotls58\\DesignPatternState\\DesignPatternState\\obj\\",
+        "projectPath": "C:\\Users\\thiago\\Documents\\GitHub\\DesignPatternState\\DesignPatternState\\DesignPatternState.csproj",
+        "packagesPath": "C:\\Users\\thiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thiago\\Documents\\GitHub\\DesignPatternState\\DesignPatternState\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\intepp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.0"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.0": {
+          "netcoreapp2.2": {
             "projectReferences": {}
           }
         },
@@ -41,23 +41,20 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.0": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
+        "netcoreapp2.2": {
+          "dependencies": {
             "Microsoft.NETCore.App": {
-              "privateAssets": "all"
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
         }
       }
     }
