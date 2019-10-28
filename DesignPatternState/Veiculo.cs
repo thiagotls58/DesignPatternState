@@ -6,18 +6,26 @@ namespace DesignPatternState
 {
     public class Veiculo
     {
+        private int codigo;
         private string nome;
         private string modelo;
         private string ano;
         private Fabricante fabricante;
-        private IEstadoVeiculo estado;
+        private IStatusVeiculo status;
 
-        public Veiculo(string nome, string modelo, string ano, Fabricante fabricante)
+        public Veiculo(int codigo, string nome, string modelo, string ano, Fabricante fabricante)
         {
+            this.codigo = codigo;
             this.nome = nome;
             this.modelo = modelo;
             this.ano = ano;
             this.fabricante = fabricante;
+            this.status = new Disponivel();
+        }
+
+        public int GetCodigo()
+        {
+            return this.codigo;
         }
 
         public string GetNome()
@@ -40,32 +48,43 @@ namespace DesignPatternState
             return this.fabricante;
         }
 
-        public void AlterarEstado(IEstadoVeiculo estado)
+        public IStatusVeiculo GetStatus()
         {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine(string.Format("## Alterando Estado ##"));
-            sb.AppendLine(string.Format("{0} para o estado {1}", this.estado, estado));
-            this.estado = estado;
+            return this.status;
         }
 
+        public void AlterarStatus(IStatusVeiculo estado)
+        {
+            this.status = estado;
+            //StringBuilder sb = new StringBuilder();
+            //sb.AppendLine(string.Format("## Alterando Estado ##"));
+            //sb.AppendLine(string.Format("{0} para o estado {1}", this.estado, estado));
+            //Console.WriteLine(sb.ToString());
+        }
+
+        public void Alugar()
+        {
+            this.status.AlugarVeiculo(this);
+        }
         public void Devolver()
         {
-            this.estado.DevolverVeiculo(this);
+            this.status.DevolverVeiculo(this);
         }
 
-        public bool Alugar()
+        public void Revisar()
         {
-            return this.estado.AlugarVeiculo(this);
+            this.status.RevisarVeiculo(this);
         }
 
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine(string.Format("Código: {0}", this.codigo));
             sb.AppendLine(string.Format("Nome: {0}", this.nome));
             sb.AppendLine(string.Format("Modelo: {0}", this.modelo));
             sb.AppendLine(string.Format("Ano: {0}", this.ano));
-            sb.AppendLine(string.Format("Fabricante: {0}", this.fabricante));
-
+            sb.AppendLine(string.Format("Fabricante: {0}", this.fabricante.GetNome()));
+            sb.AppendLine(string.Format("Status: {0}", this.status));
             return sb.ToString();
         }
     }

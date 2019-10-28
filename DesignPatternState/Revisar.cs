@@ -4,12 +4,13 @@ using System.Text;
 
 namespace DesignPatternState
 {
-    public class Alugar : IStatusVeiculo
+    public class Revisar : IStatusVeiculo
     {
         public void AlugarVeiculo(Veiculo veiculo)
         {
-            Console.WriteLine($"O seguinte veículo já está alugado: \n{veiculo}");
+            Console.WriteLine($"O seguinte veículo não está disponível: \n{veiculo}");
         }
+
         public void DevolverVeiculo(Veiculo veiculo)
         {
             veiculo.AlterarStatus(new Disponivel());
@@ -18,12 +19,13 @@ namespace DesignPatternState
 
         public void RevisarVeiculo(Veiculo veiculo)
         {
-            Console.WriteLine($"O seguinte veículo não está disponível para revisão: \n{veiculo}");
+            Console.WriteLine($"O seguinte veículo já está em revisão: \n{veiculo}");
         }
+
 
         public override string ToString()
         {
-            return "Alugado";
+            return "Revisão";
         }
     }
 }

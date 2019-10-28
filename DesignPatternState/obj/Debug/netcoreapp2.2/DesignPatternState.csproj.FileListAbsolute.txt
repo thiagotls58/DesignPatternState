@@ -2,3 +2,10 @@ C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\obj\Debug
 C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\obj\Debug\netcoreapp2.2\DesignPatternState.csproj.CoreCompileInputs.cache
 C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\obj\Debug\netcoreapp2.2\DesignPatternState.AssemblyInfoInputs.cache
 C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\obj\Debug\netcoreapp2.2\DesignPatternState.AssemblyInfo.cs
+C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\bin\Debug\netcoreapp2.2\DesignPatternState.deps.json
+C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\bin\Debug\netcoreapp2.2\DesignPatternState.runtimeconfig.json
+C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\bin\Debug\netcoreapp2.2\DesignPatternState.runtimeconfig.dev.json
+C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\bin\Debug\netcoreapp2.2\DesignPatternState.dll
+C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\bin\Debug\netcoreapp2.2\DesignPatternState.pdb
+C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\obj\Debug\netcoreapp2.2\DesignPatternState.dll
+C:\Users\thiago\Documents\GitHub\DesignPatternState\DesignPatternState\obj\Debug\netcoreapp2.2\DesignPatternState.pdb
